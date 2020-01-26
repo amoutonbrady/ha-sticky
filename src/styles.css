@@ -2,20 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.board-note time {
-  @apply block;
-}
-
-.board-note button {
-  @apply hidden;
-}
-
-.board-note:hover button {
-  @apply block;
+.board-note:hover .dashboard__menu-btn {
+	@apply block;
 }
 
 .board-note:hover time {
-  @apply hidden;
+	@apply hidden;
 }
 
 .rendered h1:not(:first-child),
@@ -24,43 +16,43 @@
 .rendered h4:not(:first-child),
 .rendered h5:not(:first-child),
 .rendered h6:not(:first-child) {
-  @apply mt-4;
+	@apply mt-4;
 }
 
 .rendered p:not(:first-child),
 .rendered ul:not(:first-child),
 .rendered ol:not(:first-child) {
-  @apply mt-3;
+	@apply mt-3;
 }
 
 .rendered h1 {
-  @apply text-2xl font-bold;
+	@apply text-2xl font-bold;
 }
 
 .rendered h2 {
-  @apply text-xl font-bold;
+	@apply text-xl font-bold;
 }
 
 .rendered h3 {
-  @apply text-lg;
+	@apply text-lg;
 }
 
 .rendered h5 {
-  @apply text-xs;
+	@apply text-xs;
 }
 
 .rendered h6 {
-  @apply text-sm;
+	@apply text-sm;
 }
 
 .rendered a {
-  @apply text-blue-400 underline;
+	@apply text-blue-400 underline;
 }
 
 .rendered ul {
-  @apply pl-4 list-disc;
+	@apply pl-4 list-disc;
 }
 
 .rendered ol {
-  @apply pl-4 list-decimal;
+	@apply pl-4 list-decimal;
 }

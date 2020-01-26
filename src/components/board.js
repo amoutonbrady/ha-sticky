@@ -28,7 +28,7 @@ const SearchBar = () =>
 		),
 	]);
 
-export const Board = ({ notes }) => {
+export const Board = ({ notes, showDashboardContextualMenu, selectedNote }) => {
 	return section({ class: 'flex flex-col h-full p-2 bg-gray-800' }, [
 		header([
 			div({ class: 'flex justify-between' }, [
@@ -51,7 +51,15 @@ export const Board = ({ notes }) => {
 				class: 'overflow-auto flex-1 mt-2',
 				style: { maxHeight: '80vh' },
 			},
-			map(notes, BoardNote),
+
+			map(notes, (note, index) =>
+				BoardNote(
+					note,
+					showDashboardContextualMenu,
+					selectedNote,
+					index,
+				),
+			),
 		),
 	]);
 };

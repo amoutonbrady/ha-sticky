@@ -808,10 +808,10 @@
     postcss "7.0.26"
     purgecss "^2.0.5"
 
-"@hyperapp/events@^0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@hyperapp/events/-/events-0.0.3.tgz#b258441e670a1d5da08db2d23f5e3eb152143e1d"
-  integrity sha512-Kboh7bpHDHMSjjJJAOYGDig+kVhGSWJfEbV39Zo+NcKPtwbjR4hK9hANiLWCN+FfdFvB5ayVDkpttmGA/EGf6g==
+"@hyperapp/events@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@hyperapp/events/-/events-0.0.4.tgz#dfeae0f0a0ad1b414034da5f7057611aa30cbfca"
+  integrity sha512-3X8D/ZsuLDu5GjVMhyGv4Hy16FsY1uPNln90J19MaTd22yvUyIqjhDj4J+1OK2cteFPAZPjfmf6lplJA+K+J3A==
 
 "@iarna/toml@^2.2.0":
   version "2.2.3"

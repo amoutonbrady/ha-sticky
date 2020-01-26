@@ -29,6 +29,8 @@ const newNote = ts => ({
 	updatedAt: ts,
 });
 
+export const noOp = state => state;
+
 export const fillNotes = (state, { value }) => ({
 	...state,
 	notes: value || [],
@@ -37,6 +39,15 @@ export const fillNotes = (state, { value }) => ({
 export const selectNote = (state, id) => ({
 	...state,
 	selectedNote: findIndex(state.notes, note => note.id === id),
+	showDashboardContextualMenu: '',
+	showNoteContextualMenu: false,
+});
+
+export const dismissNote = state => ({
+	...state,
+	selectedNote: -1,
+	showDashboardContextualMenu: '',
+	showNoteContextualMenu: false,
 });
 
 export const toggleNoteContextualMenu = (
@@ -45,6 +56,11 @@ export const toggleNoteContextualMenu = (
 ) => ({
 	...state,
 	showNoteContextualMenu: shouldShow,
+});
+
+export const toggleDashboardContextualMenu = (state, id) => ({
+	...state,
+	showDashboardContextualMenu: id,
 });
 
 export const createNote = state => {
@@ -57,6 +73,8 @@ export const createNote = state => {
 			...state,
 			notes,
 			selectedNote: notes.length - 1,
+			showDashboardContextualMenu: '',
+			showNoteContextualMenu: false,
 		},
 		WriteToStorage({
 			key: 'notes',
@@ -74,6 +92,7 @@ export const deleteNote = (state, id) => {
 			...state,
 			notes,
 			selectedNote: -1,
+			showDashboardContextualMenu: '',
 			showNoteContextualMenu: false,
 		},
 		WriteToStorage({

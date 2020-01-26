@@ -7,6 +7,7 @@ import { Board } from './components/board';
 import { fillNotes } from './actions/note';
 import { Editor } from './components/editor';
 import { Preview } from './components/preview';
+import { ContextualMenuSub } from './subscriptions/contextualMenuSub';
 
 const { main } = hh(h);
 
@@ -15,6 +16,7 @@ const init = [
 		notes: [],
 		selectedNote: -1,
 		showNoteContextualMenu: false,
+		showDashboardContextualMenu: '',
 	},
 	ReadFromStorage({
 		key: 'notes',
@@ -36,4 +38,8 @@ withDebug(app)({
 	init,
 	view,
 	node: document.getElementById('app'),
+	subscriptions: state => [
+		state.showDashboardContextualMenu !== '' &&
+			ContextualMenuSub(state.showDashboardContextualMenu),
+	],
 });
