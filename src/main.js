@@ -13,6 +13,7 @@ const init = [
 	{
 		notes: [],
 		selectedNote: -1,
+		showNoteContextualMenu: false,
 	},
 	ReadFromStorage({
 		key: 'notes',
@@ -20,13 +21,15 @@ const init = [
 	}),
 ];
 
-const view = state =>
-	main({ class: 'grid grid-cols-3 p-2 gap-2 h-full' }, [
+const view = state => {
+	const note = state.notes[state.selectedNote];
+
+	return main({ class: 'grid grid-cols-3 p-2 gap-2 h-full' }, [
 		Board(state),
-		state.selectedNote >= 0 && Editor(state.notes[state.selectedNote]),
-		state.selectedNote >= 0 &&
-			Preview(state.notes[state.selectedNote].content.rendered),
+		note && Editor(note, state.showNoteContextualMenu),
+		note && Preview(note),
 	]);
+};
 
 withDebug(app)({
 	init,

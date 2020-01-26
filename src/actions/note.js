@@ -1,5 +1,7 @@
 import findIndex from '@arr/findindex';
+import filter from '@arr/filter';
 import marked from 'marked';
+
 import { WriteToStorage } from 'hyperapp-fx';
 
 const newNote = ts => ({
@@ -22,6 +24,14 @@ export const selectNote = (state, id) => ({
 	selectedNote: findIndex(state.notes, note => note.id === id),
 });
 
+export const toggleNoteContextualMenu = (
+	state,
+	shouldShow = !state.showNoteContextualMenu,
+) => ({
+	...state,
+	showNoteContextualMenu: shouldShow,
+});
+
 export const createNote = state => {
 	const lastNote = state.notes[0];
 	if (!!lastNote && !lastNote.content.original) return state;
@@ -39,6 +49,13 @@ export const createNote = state => {
 		}),
 	];
 };
+
+export const deleteNote = (state, id) => ({
+	...state,
+	notes: filter(state.notes, note => note.id !== id),
+	selectedNote: -1,
+	showNoteContextualMenu: false,
+});
 
 export const updateNote = (state, { id, content }) => {
 	const now = Date.now();

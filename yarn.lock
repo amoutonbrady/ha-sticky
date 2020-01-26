@@ -7,6 +7,11 @@
   resolved "https://registry.yarnpkg.com/@amoutonbrady/baracuda/-/baracuda-1.4.0.tgz#21ec6f8090ceda0884b81de545f378f320104e72"
   integrity sha512-uZ9ghgshSjpA2zwf7M0jOBpRTIbmqTR2T2uomyoW/S7hNvXTL0oOf7BGpzMFr8lfepKuNNRByCPCExFLOTxYLw==
 
+"@arr/filter@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@arr/filter/-/filter-1.0.2.tgz#25f3a63efa3aaa97ea0a614134d8c97c643b2770"
+  integrity sha512-vuF1Q6XbBzzKA4K5bwC8bYRfiVfSuNRXYiS6aFEeqWiLvZgr7qiGM5Fi01ql+0fYDON97vbrIqgxTXVCj6E6hg==
+
 "@arr/find@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@arr/find/-/find-1.0.1.tgz#4f0291bc1c68512001437cecc8c0098aa40fc88a"
