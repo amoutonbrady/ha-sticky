@@ -2,6 +2,8 @@
 
 A small [hyperapp](https://hyperapp.dev) experiment.
 
+![HA Sticky current state](.github/ha-sticky.png)
+
 Here are things to figure out:
 
 -   [x] Add a note
