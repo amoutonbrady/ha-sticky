@@ -1,15 +1,19 @@
 {
 	"name": "ha-sticky",
 	"version": "0.0.1",
-	"description": "",
+	"description": "A small Hyperapp experiment.",
 	"main": "src/main.js",
 	"scripts": {
 		"dev": "parcel src/index.html",
 		"build": "parcel build src/index.html",
 		"prettier": "prettier --write \"**/**/*.{js,html,ts,md}\""
 	},
-	"keywords": [],
-	"author": "",
+	"keywords": [
+		"hyperapp",
+		"notes",
+		"markdown"
+	],
+	"author": "Alexandre Mouton-Brady <amoutonbrady@gmail.com>",
 	"license": "ISC",
 	"dependencies": {
 		"@amoutonbrady/baracuda": "^1.4.0",
