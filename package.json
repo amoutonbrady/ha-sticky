@@ -2,10 +2,10 @@
 	"name": "ha-sticky",
 	"version": "0.0.1",
 	"description": "A small Hyperapp experiment.",
-	"main": "src/main.js",
+	"default": "dist/index.html",
 	"scripts": {
-		"dev": "parcel src/index.html",
-		"build": "parcel build src/index.html",
+		"dev": "rimraf dist && cross-env NODE_ENV=development parcel src/index.html",
+		"build": "rimraf dist && cross-env NODE_ENV=production parcel build src/index.html",
 		"prettier": "prettier --write \"**/**/*.{js,html,ts,md}\""
 	},
 	"keywords": [
@@ -28,8 +28,12 @@
 		"marked": "^0.8.0"
 	},
 	"devDependencies": {
-		"parcel": "^1.12.4",
+		"@fullhuman/postcss-purgecss": "^2.0.5",
+		"cross-env": "^7.0.0",
+		"cssnano": "^4.1.10",
+		"parcel": "^2.0.0-alpha.3.2",
 		"prettier": "^1.19.1",
+		"rimraf": "^3.0.0",
 		"tailwindcss": "^1.2.0-canary.5"
 	}
 }
