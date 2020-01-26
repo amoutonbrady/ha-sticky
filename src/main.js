@@ -1,11 +1,12 @@
 import { app, h } from 'hyperapp';
-import hh from '@amoutonbrady/baracuda';
-import { Board } from './components/board';
-import { Editor } from './components/editor';
 import withDebug from 'hyperapp-debug';
-import { Preview } from './components/preview';
-import { fillNotes } from './actions/note';
+import hh from '@amoutonbrady/baracuda';
 import { ReadFromStorage } from 'hyperapp-fx';
+
+import { Board } from './components/board';
+import { fillNotes } from './actions/note';
+import { Editor } from './components/editor';
+import { Preview } from './components/preview';
 
 const { main } = hh(h);
 

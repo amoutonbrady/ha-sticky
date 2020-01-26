@@ -14,16 +14,17 @@ const formatDate = ts => {
 	});
 };
 
-export const BoardNote = ({ updatedAt, content, id }) =>
+export const BoardNote = ({ updatedAt, content, id, color }) =>
 	article(
 		{
 			onDblclick: [selectNote, id],
+			style: { borderColor: color },
 			class:
-				'rounded border-t-8 bg-gray-700 border-pink-400 p-2 flex flex-col mt-2 cursor-pointer board-note',
+				'rounded border-t-8 bg-gray-700 p-2 flex flex-col mt-2 cursor-pointer board-note',
 		},
 		[
 			time(
-				{ class: 'text-xs ml-auto text-pink-400 font-bold -my-1' },
+				{ style: { color }, class: 'text-xs ml-auto font-bold -my-1' },
 				formatDate(updatedAt),
 			),
 
