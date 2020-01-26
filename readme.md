@@ -14,7 +14,7 @@ Here are things to figure out:
 -   [x] Delete a note
 -   [x] Making local storage work
 -   [ ] Add settings (layout, dark mode, etc.)
--   [ ] Add color customization per note
+-   [x] Add color customization per note
 -   [ ] Add google or/and Github authentication
 -   [ ] Copy to clipboard
 -   [ ] Import Mardown file from URL or file
