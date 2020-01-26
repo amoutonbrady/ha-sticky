@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a29cecf3-423e-405c-a688-39e42c24aed8/deploy-status)](https://app.netlify.com/sites/ha-sticky/deploys)
+
 # HA Sticky
 
 A small [hyperapp](https://hyperapp.dev) experiment.
