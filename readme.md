@@ -11,7 +11,7 @@ Here are things to figure out:
 -   [x] Add a note
 -   [x] List notes
 -   [x] Edit notes
--   [ ] Delete a note
+-   [x] Delete a note
 -   [x] Making local storage work
 -   [ ] Add settings (layout, dark mode, etc.)
 -   [ ] Add color customization per note
