@@ -1,0 +1,31 @@
+{
+	"name": "ha-sticky",
+	"version": "0.0.1",
+	"description": "",
+	"main": "src/main.js",
+	"scripts": {
+		"dev": "parcel src/index.html",
+		"build": "parcel build src/index.html",
+		"prettier": "prettier --write \"**/**/*.{js,html,ts,md}\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@amoutonbrady/baracuda": "^1.4.0",
+		"@arr/find": "^1.0.1",
+		"@arr/findindex": "^1.0.1",
+		"@arr/map": "^1.0.1",
+		"@hyperapp/events": "^0.0.3",
+		"@mdi/js": "^4.8.95",
+		"hyperapp": "^2.0.3",
+		"hyperapp-debug": "^1.0.0-beta.5",
+		"hyperapp-fx": "^2.0.0-beta.1",
+		"marked": "^0.8.0"
+	},
+	"devDependencies": {
+		"parcel": "^1.12.4",
+		"prettier": "^1.19.1",
+		"tailwindcss": "^1.2.0-canary.5"
+	}
+}
