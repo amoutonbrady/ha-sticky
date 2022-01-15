@@ -26,7 +26,7 @@
 		"hyperapp": "^2.0.3",
 		"hyperapp-debug": "^1.0.0-beta.5",
 		"hyperapp-fx": "^2.0.0-beta.1",
-		"marked": "^0.8.0"
+		"marked": "^4.0.10"
 	},
 	"devDependencies": {
 		"@fullhuman/postcss-purgecss": "^2.0.5",
